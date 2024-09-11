@@ -24,12 +24,12 @@ The Pod consists of:
  ### 1. Create Services (myservice and mydb)
  Before creating the Pod, we need to set up the two services that the init containers will wait for:
  
-    1. Create the myservice service:
+ 1. Create the myservice service:
     ```
     kubectl expose deployment myservice --name=myservice --port=80 --target-port=8080
     ```
     
-    2. Create the mydb service:
+ 2. Create the mydb service:
     ```
     kubectl expose deployment mydb --name=mydb --port=80 --target-port=3306
     ```
